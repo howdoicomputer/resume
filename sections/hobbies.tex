@@ -1,0 +1,63 @@
+\cvsection{Homelab}
+\begin{cventries}
+  \cventry
+    {}
+    {}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item {Three nodes are a k3s cluster running on Raspberry Pis with MetalLB in layer2 mode to serve as a load balancer}
+        \item {The k3s cluster uses Ansible to converge an Ubuntu OS and the persistent volumes are satisfied by a consumer NAS}
+        \item {The fourth physical node is a consumer grade hardware box with prosumer hybrid drives in a ZFS mirrored pool. The node is named megamind.}
+        \item {Megamind's underlying operating system is NixOS}
+        \item {Megamind runs its services via Nomad, Consul, Vault}
+        \item {Individual applications are able to publish their metrics endpoints to Consul and then have their metrics collected via Prometheseus and displayed using Grafana}
+        \item {Cloudflare handles DNS with subdomains routing to specific services via Traefik}
+        \item {The host runs a dozen applications including custom Go and Elixir services}
+        \item {Changing OS state is done via Nix flakes and is immutable with seamless rollback on error}
+      \end{cvitems}
+    }
+\end{cventries}
+
+\cvsection{Hobbies}
+\begin{cventries}
+  \cventry
+    {}
+    {}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item {Board games, rock climbing, science fiction and fantasy books, table top RPGs, programming}
+      \end{cvitems}
+    }
+\end{cventries}
+
+\cvsection{Skills}
+\begin{cventries}
+  \cventry
+    {}
+    {}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item {Bash, Nomad, Terraform, Python, Node.js, TypeScript, Kubernetes, k8s, Elixir, Nix, Docker, AWS, ECS, Helm, TCP/IP, Prometheus, Consul, Vault, Linux, Go, SaltStack, Ansible, Puppet, Chef, git, DNS, GCP, ZFS, Docker, SQL, Kafka, Grafana, cloud}
+      \end{cvitems}
+    }
+\end{cventries}
+
+\cvsection{Resume Source Code}
+\begin{cventries}
+  \cventry
+    {}
+    {}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item \href{https://git.howdoicomputer.lol/howdoicomputer/resume}{https://git.howdoicomputer.lol/howdoicomputer/resume}
+      \end{cvitems}
+    }
+\end{cventries}
