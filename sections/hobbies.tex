@@ -1,21 +1,20 @@
 \cvsection{Homelab}
 \begin{cventries}
   \cventry
-    {}
+    {A pseudo-relevant hobby that is like a second job}
     {}
     {}
     {}
     {
       \begin{cvitems}
         \item {Three nodes are a k3s cluster running on Raspberry Pis with MetalLB in layer2 mode to serve as a load balancer}
-        \item {The k3s cluster uses Ansible to converge an Ubuntu OS and the persistent volumes are satisfied by a consumer NAS}
-        \item {The fourth physical node is a consumer grade hardware box with prosumer hybrid drives in a ZFS mirrored pool. The node is named megamind.}
-        \item {Megamind's underlying operating system is NixOS}
-        \item {Megamind runs its services via Nomad, Consul, Vault}
+        \item {The OS for each k3s node is Ubuntu 20.04 converged with Ansible and the persistent volumes are satisfied by a consumer NAS}
+        \item {A fourth and primary physical node is a consumer grade hardware box with prosumer hybrid drives in a ZFS mirrored pool. The node is named megamind}
+        \item {Megamind's underlying operating system is NixOS and immutable deployments to the OS are done via deploy-rs and Nix flakes; failed state applies trigger automatic rollback to last OS state snapshot}
+        \item {Megamind runs applications and services via Nomad, Consul, Vault}
         \item {Individual applications are able to publish their metrics endpoints to Consul and then have their metrics collected via Prometheseus and displayed using Grafana}
-        \item {Cloudflare handles DNS with subdomains routing to specific services via Traefik}
-        \item {The host runs a dozen applications including custom Go and Elixir services}
-        \item {Changing OS state is done via Nix flakes and is immutable with seamless rollback on error}
+        \item {Cloudflare handles DNS with subdomains routing to specific services via Traefik; Let's Encrypt is used to provide SSL certs via the DNS challenge method}
+        \item {Homelab serves as a personal PaaS that Elixir and Go services are deployed to}
       \end{cvitems}
     }
 \end{cventries}
@@ -29,7 +28,7 @@
     {}
     {
       \begin{cvitems}
-        \item {Board games, rock climbing, science fiction and fantasy books, table top RPGs, programming}
+        \item {Board games, rock climbing, science fiction/fantasy books, table top RPGs, programming, 3D printing, guitar, electrical engineering/arduino}
       \end{cvitems}
     }
 \end{cventries}
@@ -43,7 +42,7 @@
     {}
     {
       \begin{cvitems}
-        \item {Bash, Nomad, Terraform, Python, Node.js, TypeScript, Kubernetes, k8s, Elixir, Nix, Docker, AWS, ECS, Helm, TCP/IP, Prometheus, Consul, Vault, Linux, Go, SaltStack, Ansible, Puppet, Chef, git, DNS, GCP, ZFS, Docker, SQL, Kafka, Grafana, cloud}
+        \item {Bash, Nomad, Terraform, Python, Node.js, TypeScript, Kubernetes, k8s, Elixir, Nix, Docker, AWS, ECS, Helm, TCP/IP, Prometheus, Consul, Vault, Linux, Go, SaltStack, Ansible, Puppet, Chef, git, DNS, GCP, ZFS, Docker, SQL, Kafka, Grafana, cloud, distributed computing, raft, Ruby, Dagger, bpf, JavaScript}
       \end{cvitems}
     }
 \end{cventries}

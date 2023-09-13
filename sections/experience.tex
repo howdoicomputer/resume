@@ -54,34 +54,16 @@
         \item {Wrote custom tooling around AWS ECS in Python to enforce draining nodes from tasks during abrupt scaling events}
         \item {Performed capacity planning in accordance with load testing results and metrics to right size capacity}
         \item {Embedded into application teams to assist them with the cloud-native architectural designs of their services}
-        \item {Designed cloud logging architecture utlizing FluentD, FluentBit, and logging sidecars for log ingestion over PrivateLink into Splunk}
+        \item {Designed cloud logging architecture utilizing FluentD, FluentBit, and logging sidecars for log ingestion over PrivateLink into Splunk}
         \item Wrote custom FluentBit plugins in Ruby to support generalized logging event patterns for applications running on ECS
         \item {Wrote Terraform module to abstract AWS Kinesis Streams and then assisted teams with a migration away from Kafka}
-        \item {Designed immutable infrastructure pipeline using Jenkins pipelines, Ansible playbooks, and Packer to produce AWS AMIs that fed into EC2 nodes within autoscaling groups}
+        \item {Designed immutable OS image pipeline using Jenkins pipelines, Ansible playbooks, and Packer to produce AWS AMIs that fed into EC2 nodes within autoscaling groups}
         \item {Wrote custom integrations for running GPU dependent tasks on ECS nodes in order to support complex topgraphical image generation}
         \item {Wrote CLI tooling in Go for Cloud Platform team to automate checking ECS clusters, interacting with internal HTTP endpoints, and more}
         \item {Extended and customized aws-azure-login Node.js application to support logging into accounts federated to AWS from Azure AD via SAML}
         \item {Co-designed a hub and spoke model that used AWS accounts as a security and management segregation layer for environments with Transit Gateway linking all of the environments together}
       \end{cvitems}
     }
-
-  %% \cventry
-  %%   {}
-  %%   {}
-  %%   {}
-  %%   {}
-  %%   {
-  %%     \begin{cvitems}
-  %%       \item {Eliminated Nagios CPU bottleneck by retooling clusters to run PyPy}
-  %%       \item {Wrote CLI tooling in Go for Cloud Platform team to automate checking ECS clusters, interacting with internal HTTP endpoints, and more}
-  %%       \item {Designed and wrote an access system in Go and Terraform that created jumphosts scoped to a team and then synced SSH keys to them for internal network access}
-  %%       \item {Replaced that SSH system with AWS Systems Manager when the product was releases in order to improve security and better integrate access control with IAM}
-  %%       \item {Extended and customized aws-azure-login Node.js application to support logging into accounts federated to AWS from Azure AD via SAML}
-  %%       \item {Co-designed a hub and spoke model that used AWS accounts as a security and management segregation layer for environments with Transit Gateway linking all of the environments together}
-  %%       \item {Managed account creation process for dozens of AWS accounts}
-  %%       \item {Heavily pushed for testing Infrastructure-as-Code by introducing and establishing testing patterns for Terraform modules and EC2 instance OS state}
-  %%     \end{cvitems}
-  %%  }
 
 %---------------------------------------------------------
   \cventry
@@ -91,12 +73,11 @@
     {January 12. 2015 - May 23. 2016} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Refactored and wrote Puppet manifests to converge data center localized hardware nodes to prepare them as Proxmox hosts}
-        \item {Co-designed with DBA a distributed file system storage array using Ceph}
+        \item {Authored and refactored Puppet manifests to converge data center localized hardware nodes to prepare them as Proxmox hosts}
+        \item {Co-designed a distributed file system storage array using Ceph to act as shared storage layer for Proxmox VMs}
         \item {Designed resilient high-availability MySQL cluster using Heartbeat to float a VIP between multiple masters}
         \item {Maintained several applications deployed via Proxmox as VMs that were converged via Puppet}
-        \item {Wrote a tool in Ruby that migrated Opower from FreeIPA to Active Directory}
-        \item {Designed and implemented Active Directory sync mechanism to Proxmox VMs via SSSD (System Security Services Daemon)}
+        \item {Wrote a tool in Ruby to migrate employee objects from FreeIPA to Active Directory}
       \end{cvitems}
     }
 
@@ -122,9 +103,9 @@
     {January 23. 2012 - January 10. 2014} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Wrote a custom deployment web UI using Ruby and jQuery to integrate Chef, AWS EC2 nodes, and Haproxy to serve as the main deployment interface for ~100 engineers for a dozen of Java based microservices}
+        \item {Wrote a custom deployment web UI using Ruby and jQuery to integrate Chef, AWS EC2 nodes, and Haproxy to serve as the main deployment interface for over 100 engineers for dozens of Java based microservices}
         \item {Wrote Chef cookbooks that converged EC2 nodes so that they could run Java based applications}
-        \item {Rewrote the aforementioned deployment tool as part of a migration from AWS to a data center platform runnign VMWare VSphere}
+        \item {Rewrote the aforementioned deployment tool as part of a migration from AWS to a data center platform running VMWare VSphere}
       \end{cvitems}
     }
 \end{cventries}
