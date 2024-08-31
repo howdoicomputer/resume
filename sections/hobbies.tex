@@ -1,20 +1,23 @@
-\cvsection{Homelab}
+\cvsection{Portfolio}
 \begin{cventries}
   \cventry
-    {A pseudo-relevant hobby that is like a second job}
+    {}
     {}
     {}
     {}
     {
       \begin{cvitems}
-        \item {Three nodes are a k3s cluster running on Raspberry Pis with MetalLB in layer2 mode to serve as a load balancer}
-        \item {The OS for each k3s node is Ubuntu 20.04 converged with Ansible and the persistent volumes are satisfied by a consumer NAS}
-        \item {A fourth and primary physical node is a consumer grade hardware box with prosumer hybrid drives in a ZFS mirrored pool. The node is named megamind}
-        \item {Megamind's underlying operating system is NixOS and immutable deployments to the OS are done via deploy-rs and Nix flakes; failed state applies trigger automatic rollback to last OS state snapshot}
-        \item {Megamind runs applications and services via Nomad, Consul, Vault}
-        \item {Individual applications are able to publish their metrics endpoints to Consul and then have their metrics collected via Prometheseus and displayed using Grafana}
-        \item {Cloudflare handles DNS with subdomains routing to specific services via Traefik; Let's Encrypt is used to provide SSL certs via the DNS challenge method}
-        \item {Homelab serves as a personal PaaS that Elixir and Go services are deployed to}
+        \item
+          {\href{https://github.com/howdoicomputer/aws-cdktf-example}{AWS CDKTF Example} - A reference AWS architecture that deploys an EKS cluster running ArgoCD and Karpenter. Built using the TypeScript version of Terraform CDK}
+        \item {\href{https://github.com/codeforsanjose/findahome}{Find a Home} - A Rails application to help Bay Area natives navigate a high cost rent market}
+        \item
+        {\href{https://github.com/codeforsanjose/calidrought-legacy}{Calidrought} - A Node.js API that aggregated data from a variety of government agencies and presented it for data visualization}
+        \item
+        {\href{https://github.com/howdoicomputer/bookshelfbot}{BookshelfBot} - An Elixir based Discord bot that queries books and displays them inline to chats. Actively maintained for a few dozen Discord servers as an official bot}
+        \item
+        {\href{https://github.com/howdoicomputer/onair}{OnAir} - A Golang client/server pairing that controls whether or not a radio station `onair` sign is `lit up` dependent on whether or not a user is part of a Discord voice channel}
+        \item
+        {\href{https://howdoicomputer.lol}{Blog} - My personal blog hosted on a Nomad orchestrated homelab server where I write about cloud, programming, and homelabbing. Homelab also hosts my personal \href{https://git.howdoicomputer.lol/}{git server} where some other personal projects are kept}
       \end{cvitems}
     }
 \end{cventries}
@@ -42,7 +45,14 @@
     {}
     {
       \begin{cvitems}
-        \item {Bash, Nomad, Terraform, Python, Node.js, TypeScript, Kubernetes, k8s, Elixir, Nix, Docker, AWS, ECS, Helm, TCP/IP, Prometheus, Consul, Vault, Linux, Go, SaltStack, Ansible, Puppet, Chef, git, DNS, GCP, ZFS, Docker, SQL, Kafka, Grafana, cloud, distributed computing, raft, Ruby, Dagger, bpf, JavaScript}
+        \item {Programming languages: Go, Elixir, TypeScript/JavaScript/Node, Python, Ruby, Groovy, SQL}
+        \item {Linux: containers, Docker, TCP/IP, DNS, ZFS, eBPF}
+        \item {Configuration management systems: SaltStack, Chef, Ansible, Puppet}
+        \item {HashiConf tools: Terraform, Vault, Consul, Nomad, Packer}
+        \item {Cloud providers: AWS, GCP}
+        \item {Products: Jenkins, Dagger, Kafka, Prometheus, Grafana}
+        \item {Orchestration systems: Kubernetes/k8s, AWS ECS, Mesos, Nomad}
+        \item {Kubernetes products: Helm, AWS Load Balancer Controller, ArgoCD, Karpenter}
       \end{cvitems}
     }
 \end{cventries}

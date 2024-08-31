@@ -83,7 +83,8 @@
 % Needed to deal a paragraphs
 \RequirePackage{parskip}
 % Needed to deal hyperlink
-\RequirePackage[hidelinks,unicode,pdfpagelabels=false]{hyperref}
+% \RequirePackage[hidelinks,unicode,pdfpagelabels=false]{hyperref}
+\usepackage[colorlinks=true,urlcolor=awesome-skyblue]{hyperref}
 \hypersetup{%
   pdftitle={},
   pdfauthor={},
@@ -503,7 +504,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://git.howdoicomputer.lol/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
+          \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
         }%
       \ifthenelse{\isundefined{\@gitlab}}%
         {}%

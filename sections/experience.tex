@@ -11,27 +11,27 @@
 
 %---------------------------------------------------------
   \cventry
-    {Senior Systems Engineer \& Site Architecture Lead} % Job title
+    {Senior Systems Engineer} % Job title
     {Grabango} % Organization
     {Berkeley, CA, USA} % Location
     {September 26. 2022 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Mentor and technical lead for DevOps team}
-        \item {Implemented a HashiCorp Nomad based orchestration system that allocated services across thousands of IoT devices as part of a hybrid infrastructure system bridging physical locations and GCP cloud infrastructure}
-        \item {Used Dagger and Go to build portable, localized CI/CD pipelines using Docker; used the same Dagger/Go combo to create developer tooling to enable a Platform-as-Service model for deploying services to on-premise infrastructure via Nomad}
-        \item {Lead meetings and facilitated cultural shifts for adopting SRE practices such as SLIs/SLOs and production readiness checklists}
-        \item {Lead an internal architecture group involving staff and principal engineers to improve the architecture of physical sites and introduce cultural standards for engineering excellence}
-        \item {Managed GCP Kubernetes clusters via Terraform and enabled a self-service model by building Helm based deployment pipelines using Jenkins}
+        \item {Built and administered multiple Kubernetes clusters (GKE) - each spanning hundreds of nodes}
+        \item {Implemented ArgoCD as a GitOps based modern deployment system}
+        \item {Supported AI/inference workloads on k8s with Airflow and GPU node pools}
+        \item {Technical lead for devops team}
+        \item {Built an internal platform for self-service ownership of cloud and datacenter infrastructure}
+        \item {Designed Terraform usage patterns and code organization and led multi-month initiative to import hand-spun GCP infrastructure into Terraform state}
+        \item {Implemented a HashiCorp Nomad based orchestration system that allocated services across thousands of IoT devices as part of a hybrid infrastructure system bridging DC located Nomad and cloud located Kubernetes clusters}
+        \item {Used Dagger and Go to build portable, localized CI/CD pipelines as well as wrap deployment processes for Kubernetes and Nomad}
+        \item {Lead an internal architecture group involving staff and principal engineers to improve the architecture of physical sites and introduce SRE processes for teams}
         \item {Heavily refactored SaltStack codebase to improve idempotency and general code quality as well as make use of Salt's more advanced features like orchestration and event-driven actions}
-        \item {Co-led a migration to Ansible in an effort to abstract application deployment to Nomad and better define the responsibilities of a configuration management system}
-        \item {Built a monitoring system with Prometheus, Thanos, Grafana, and Consul that used service discovery to auto-configure application metrics collection}
-        \item {Improved monitoring, resiliency, and performance for complex storage systems built on top of ZFS}
-        \item {Retooled AI/ML image inference event streaming architecture by replacing Kafka with RedPanda for improved reliability and performance}
-        \item {Designed extensive caching layers for package types going to physical sites using pull-through Docker registry caches for container images and Nginx proxies for raw package types}
-        \item {Lead migration from Nexus, internal PyPi, and Google Artifact Registry to Cloudsmith in order to centralize artifact management, improve supported artifact types, reduce complexity, and save costs}
+        \item {Designed a Prometheus monitoring system using Thanos to federate across multiple datacenters and Kubernetes clusters with service discovery automatically registering metrics for applications}
+        \item {Managed Kafka installations across multiple datacenters and Kubernetes clusters for AI inference video pipelines}
+        \item {Designed caching infrastructure for package distributions to multiple physical sites}
         \item {Wrote Golang based CLI tooling for the systems engineering team to automate several day-to-day tasks around ticket management, SaltStack state application, k8s automation, and more}
-        \item {Designed Terraform usage patterns and code organization and led a multi-month initiative to import hand-spun GCP infrastructure into Terraform state}
+        \item {Authored incident response guides, production readiness review processes, and other related documentation}
       \end{cvitems}
     }
 
@@ -43,13 +43,10 @@
     {June 22. 2016 - September 9. 2022} % Date(s)
     {
       \begin{cvitems}
-        \item {Technical lead for Cloud Platform team with a head count of 10 engineers}
-        \item {Onboarded, mentored, and helped grow several engineers and interns while at Shutterfly}
-        \item {Part of committee of principal, staff, and architect contributors to build a larger architectural model for a migration from data center to AWS}
-        \item {Migrated over 100 microservices of varying languages to Amazon ECS}
-        \item {Designed several large, foundational Terraform modules that were used by ~200 engineers to deploy Security Groups, Elastic Container Service clusters, IAM entities, VPCs, ALBS, and more}
+        \item {Migrated over 100 microservices of varying languages to Amazon ECS as part of a datacenter migration}
+        \item {Designed several large, foundational Terraform modules that were used by ~200 engineers to deploy Security Groups, ECS clusters, IAM entities, VPCs, ALBS, and more}
         \item {Designed a AWS global resource testing model that used AWS accounts as test environments for globally available resources like IAM entitites}
-        \item {Wrote a custom reverse proxy in Go to facilitate a maximized inverse cache hit rate in order to support a legacy .NET application}
+        \item {Wrote custom reverse proxies in Go}
         \item {Wrote custom log ingress filters in Node.js on AWS Lambda for translating log entries into structured log events for Splunk ingress}
         \item {Wrote custom tooling around AWS ECS in Python to enforce draining nodes from tasks during abrupt scaling events}
         \item {Performed capacity planning in accordance with load testing results and metrics to right size capacity}
@@ -58,10 +55,12 @@
         \item Wrote custom FluentBit plugins in Ruby to support generalized logging event patterns for applications running on ECS
         \item {Wrote Terraform module to abstract AWS Kinesis Streams and then assisted teams with a migration away from Kafka}
         \item {Designed immutable OS image pipeline using Jenkins pipelines, Ansible playbooks, and Packer to produce AWS AMIs that fed into EC2 nodes within autoscaling groups}
-        \item {Wrote custom integrations for running GPU dependent tasks on ECS nodes in order to support complex topgraphical image generation}
-        \item {Wrote CLI tooling in Go for Cloud Platform team to automate checking ECS clusters, interacting with internal HTTP endpoints, and more}
+        \item {Wrote custom integrations for running GPU dependent tasks on ECS nodes in order to support complex topgraphical image generation via AI/ML}
+        \item {Wrote CLI tooling in Go for internal teams to automate common automation tasks}
         \item {Extended and customized aws-azure-login Node.js application to support logging into accounts federated to AWS from Azure AD via SAML}
-        \item {Co-designed a hub and spoke model that used AWS accounts as a security and management segregation layer for environments with Transit Gateway linking all of the environments together}
+        \item {Designed a hub and spoke model that used AWS Transit Gateway to link environments together}
+        \item {Part of committee of principal, staff, and architect contributors to build a larger architectural model for a migration from data center to AWS}
+        \item {Mentored several engineers over the course of my 6 years at the company}
       \end{cvitems}
     }
 
@@ -78,6 +77,7 @@
         \item {Designed resilient high-availability MySQL cluster using Heartbeat to float a VIP between multiple masters}
         \item {Maintained several applications deployed via Proxmox as VMs that were converged via Puppet}
         \item {Wrote a tool in Ruby to migrate employee objects from FreeIPA to Active Directory}
+        \item {Migrated datacenter applications and Proxmox VMs to Oracle Cloud}
       \end{cvitems}
     }
 
@@ -86,13 +86,14 @@
     {DevOps Engineer} % Job title
     {InsideVault} % Organization
     {San Carlos, CA, USA} % Location
-    {Febuary 24. 2014 - December 15. 2015} % Date(s)
+    {Febuary 24. 2014 - January 15. 2016} % Date(s)
     {
       \begin{cvitems}
         \item {Managed MongoDB cluster used by SEO optmization platform}
         \item {Used Jenkins to build testing and deployment pipelines for Scala applications using sbt}
         \item {Wrote Chef cookbooks for deploying Apache Mesos cluster members to EC2}
-        \item {Managed Apache Mesus cluster that was used for distributed batch processing}
+        \item {Managed Apache Mesos cluster that was used for distributed batch processing}
+        \item {Built log ingestion pipeline for Apache Mesos batch jobs to self-hosted Kibana/Logstash/ElasticSearch}
       \end{cvitems}
     }
 %---------------------------------------------------------
@@ -103,8 +104,10 @@
     {January 23. 2012 - January 10. 2014} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Wrote a custom deployment web UI using Ruby and jQuery to integrate Chef, AWS EC2 nodes, and Haproxy to serve as the main deployment interface for over 100 engineers for dozens of Java based microservices}
-        \item {Wrote Chef cookbooks that converged EC2 nodes so that they could run Java based applications}
+        \item {Assisted with migration of Java services from physical data center to AWS}
+        \item {Wrote a custom deployment web UI using Ruby, Padrino, and jQuery to integrate Chef, AWS EC2 nodes, and Haproxy to serve as the main deployment interface for over 100 engineers for dozens of Java based microservices}
+        \item {Built Chef environment to administer hundreds of EC2 nodes and wrote cookbooks to handle hosted proxies, EC2 nodes, and databases}
+        \item {Wrote scripts and application cookbooks in Ruby to integrate Java services with AWS dependencies}
         \item {Rewrote the aforementioned deployment tool as part of a migration from AWS to a data center platform running VMWare VSphere}
       \end{cvitems}
     }
