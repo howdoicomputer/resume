@@ -9,7 +9,7 @@ CC = xelatex
 
 resume.pdf: clean
 	$(CC) resume.tex
-	okular resume.pdf
+	open resume.pdf
 
 coverletter.pdf: clean
 	$(CC) coverletter.tex

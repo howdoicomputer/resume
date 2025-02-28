@@ -11,27 +11,26 @@
 
 %---------------------------------------------------------
   \cventry
-    {Senior Systems Engineer} % Job title
+    {Senior Systems Engineer AX5} % Job title
     {Grabango} % Organization
     {Berkeley, CA, USA} % Location
     {September 26. 2022 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Built and administered multiple Kubernetes clusters (GKE) - each spanning hundreds of nodes}
-        \item {Implemented ArgoCD as a GitOps based modern deployment system}
+        \item {Implemented multiple, high scale Kubernetes clusters (GKE)}
+        \item {Implemented pull-based Ansible across thousands of nodes}
         \item {Supported AI/inference workloads on k8s with Airflow and GPU node pools}
-        \item {Technical lead for devops team}
-        \item {Built an internal platform for self-service ownership of cloud and datacenter infrastructure}
-        \item {Designed Terraform usage patterns and code organization and led multi-month initiative to import hand-spun GCP infrastructure into Terraform state}
+        \item {Built an internal platform for self-service ownership of cloud and edge infrastructure}
+        \item {Designed Terraform usage patterns and code organization and led multi-month initiative to import hand-spun infrastructure into Terraform state}
         \item {Implemented a HashiCorp Nomad based orchestration system that allocated services across thousands of IoT devices as part of a hybrid infrastructure system bridging DC located Nomad and cloud located Kubernetes clusters}
         \item {Used Dagger and Go to build portable, localized CI/CD pipelines as well as wrap deployment processes for Kubernetes and Nomad}
-        \item {Lead an internal architecture group involving staff and principal engineers to improve the architecture of physical sites and introduce SRE processes for teams}
+        \item {Lead an internal architecture group involving principal engineers to improve the architecture of physical sites and introduce SRE processes for teams}
         \item {Heavily refactored SaltStack codebase to improve idempotency and general code quality as well as make use of Salt's more advanced features like orchestration and event-driven actions}
         \item {Designed a Prometheus monitoring system using Thanos to federate across multiple datacenters and Kubernetes clusters with service discovery automatically registering metrics for applications}
         \item {Managed Kafka installations across multiple datacenters and Kubernetes clusters for AI inference video pipelines}
-        \item {Designed caching infrastructure for package distributions to multiple physical sites}
+        \item {Designed caching infrastructure for edge package architecture}
         \item {Wrote Golang based CLI tooling for the systems engineering team to automate several day-to-day tasks around ticket management, SaltStack state application, k8s automation, and more}
-        \item {Authored incident response guides, production readiness review processes, and other related documentation}
+        \item {Authored incident response guides, production readiness review processes, and championed SRE practices}
       \end{cvitems}
     }
 
@@ -43,9 +42,9 @@
     {June 22. 2016 - September 9. 2022} % Date(s)
     {
       \begin{cvitems}
-        \item {Migrated over 100 microservices of varying languages to Amazon ECS as part of a datacenter migration}
+        \item {Implemented dozens of ECS clusters spanning thousands of EC2 nodes and hundreds of microservices}
         \item {Designed several large, foundational Terraform modules that were used by ~200 engineers to deploy Security Groups, ECS clusters, IAM entities, VPCs, ALBS, and more}
-        \item {Designed a AWS global resource testing model that used AWS accounts as test environments for globally available resources like IAM entitites}
+        \item {Designed a AWS global resource testing model that used AWS accounts as test environments for globally available resources like IAM entities}
         \item {Wrote custom reverse proxies in Go}
         \item {Wrote custom log ingress filters in Node.js on AWS Lambda for translating log entries into structured log events for Splunk ingress}
         \item {Wrote custom tooling around AWS ECS in Python to enforce draining nodes from tasks during abrupt scaling events}
@@ -55,7 +54,7 @@
         \item Wrote custom FluentBit plugins in Ruby to support generalized logging event patterns for applications running on ECS
         \item {Wrote Terraform module to abstract AWS Kinesis Streams and then assisted teams with a migration away from Kafka}
         \item {Designed immutable OS image pipeline using Jenkins pipelines, Ansible playbooks, and Packer to produce AWS AMIs that fed into EC2 nodes within autoscaling groups}
-        \item {Wrote custom integrations for running GPU dependent tasks on ECS nodes in order to support complex topgraphical image generation via AI/ML}
+        \item {Wrote custom integrations for running GPU dependent tasks on ECS nodes in order to support complex topographical image generation via AI/ML}
         \item {Wrote CLI tooling in Go for internal teams to automate common automation tasks}
         \item {Extended and customized aws-azure-login Node.js application to support logging into accounts federated to AWS from Azure AD via SAML}
         \item {Designed a hub and spoke model that used AWS Transit Gateway to link environments together}
@@ -86,10 +85,10 @@
     {DevOps Engineer} % Job title
     {InsideVault} % Organization
     {San Carlos, CA, USA} % Location
-    {Febuary 24. 2014 - January 15. 2016} % Date(s)
+    {February 24. 2014 - January 15. 2016} % Date(s)
     {
       \begin{cvitems}
-        \item {Managed MongoDB cluster used by SEO optmization platform}
+        \item {Managed MongoDB cluster used by SEO optimization platform}
         \item {Used Jenkins to build testing and deployment pipelines for Scala applications using sbt}
         \item {Wrote Chef cookbooks for deploying Apache Mesos cluster members to EC2}
         \item {Managed Apache Mesos cluster that was used for distributed batch processing}
